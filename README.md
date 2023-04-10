@@ -63,7 +63,7 @@ Example:\
 This is the **full path** path to where you want the output of this pipeline to write to.
 
 Example:\
-&nbsp;`/Users/liz/ENIGMA/my_ENIGMA_DTI_analysis`
+&nbsp;`/Users/liz/ENIGMA/my_ENIGMA_DTI_analysis/run_tbss`
 
 
 ### `-d`: path to DTIFIT subject folders
