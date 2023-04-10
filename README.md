@@ -22,6 +22,8 @@ The following pages may be helpful before running this pipeline:
 &nbsp;&nbsp;&nbsp;&nbsp; 2. ENIGMA_DTI_02_EPI_Correction ([:octocat:](https://github.com/ENIGMA-git/ENIGMA_DTI_02_EPI_Correction))\
 &nbsp;&nbsp;&nbsp;&nbsp; 3. ENIGMA_DTI_03_Quality_Control ([:octocat:](https://github.com/ENIGMA-git/ENIGMA_DTI_03_Quality_Control))
 
+We also assume that FSL is installed and can be found under the following alias: `$FSLDIR`.
+
 ## Running the script
 
     ./ENIGMA_DTI_TBSS_pipeline.sh --help
