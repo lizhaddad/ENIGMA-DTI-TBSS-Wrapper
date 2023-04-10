@@ -205,10 +205,10 @@ ${DIR}/ENIGMA_DTI_TBSS_pipeline.sh \
 
 Note the only part of the command that has changed is the `-q` flag option
 
+# 
 
-<br>
 
-#### That's it! Now you should have all of your subjects ROIs in one spreadsheet for each diffusivity measure with relevant covariates ready for association testing!
+**That's it! Now you should have all of your subjects ROIs in one spreadsheet for each diffusivity measure with relevant covariates ready for association testing!**
 
  ![picture](images/enigma_tbss.png)
 
