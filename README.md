@@ -147,7 +147,7 @@ Below is an example:
 This pipeline makes use of R to merge the final tables together. Please make sure R is installed and provide the **full path** to the binary as such
 
 Example:\
-&nbsp;`/usr/local/R-2.9.2_64bit/bin/R`
+&nbsp;`/usr/local/R/bin/R`
 
 <br>
 
@@ -164,7 +164,7 @@ ${DIR}/ENIGMA_DTI_TBSS_pipeline.sh \
     -d ${DIR}/my_ENIGMA_DTI_analysis/DTIFIT_folders \
     -s ${DIR}/subjectIDs_list.txt \
     -i ${DIR}/subject_demographics.txt \
-    -r /usr/local/R-2.9.2_64bit/bin/R 
+    -r /usr/local/R/bin/R 
 ```
 
 
@@ -183,7 +183,7 @@ ${DIR}/ENIGMA_DTI_TBSS_pipeline.sh \
     -d ${DIR}/my_ENIGMA_DTI_analysis/DTIFIT_folders \
     -s ${DIR}/subjectIDs_list.txt \
     -i ${DIR}/subject_demographics.txt \
-    -r /usr/local/R-2.9.2_64bit/bin/R \
+    -r /usr/local/R/bin/R \
     -q 1
 ```
 
@@ -196,7 +196,7 @@ ${DIR}/ENIGMA_DTI_TBSS_pipeline.sh \
     -d ${DIR}/my_ENIGMA_DTI_analysis/DTIFIT_folders \
     -s ${DIR}/subjectIDs_list.txt \
     -i ${DIR}/subject_demographics.txt \
-    -r /usr/local/R-2.9.2_64bit/bin/R \
+    -r /usr/local/R/bin/R \
     -q 2
 ```
 
