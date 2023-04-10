@@ -103,7 +103,7 @@ Information on how to run DTIFIT can be found [**here**](https://web.mit.edu/fsl
 
 ### `-s`: path to subject text file 
 
-This is a text file (.txt) with the subject IDs
+This is the **full path** to a text file (.txt) with the subject IDs
 
 **NOTE**: these should be the same name as the folders located in the DTIFIT folder `-d`.
 
@@ -120,7 +120,7 @@ An example is provided below, let's call it `subjectIDs_list.txt`
 
 ### `-i`: path to the demographics text file
 
-This is a tab-delimited text file, or a .csv with the subject information (demographics). This file will be merged to the final summary statistics derived from this protocol. 
+This is the **full path**  to a tab-delimited text file, or a .csv with the subject information (demographics). This file will be merged to the final summary statistics derived from this protocol. 
 
 Below is an example:
 
