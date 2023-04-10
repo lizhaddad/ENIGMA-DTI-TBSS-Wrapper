@@ -165,8 +165,8 @@ ${DIR}/ENIGMA_DTI_TBSS_pipeline.sh \
     -e ${DIR}/ENIGMA_DTI_TBSS \
     -o ${DIR}/my_ENIGMA_DTI_analysis/run_tbss \
     -d ${DIR}/my_ENIGMA_DTI_analysis/DTIFIT_folders \
-    -s ${DIR}/subjectIDs_list.txt \
-    -i ${DIR}/subject_demographics.txt \
+    -s ${DIR}/my_ENIGMA_DTI_analysis/subjectIDs_list.txt \
+    -i ${DIR}/my_ENIGMA_DTI_analysis/subject_demographics.txt \
     -r /usr/local/R/bin/R 
 ```
 
@@ -184,8 +184,8 @@ ${DIR}/ENIGMA_DTI_TBSS_pipeline.sh \
     -e ${DIR}/ENIGMA_DTI_TBSS \
     -o ${DIR}/my_ENIGMA_DTI_analysis/run_tbss \
     -d ${DIR}/my_ENIGMA_DTI_analysis/DTIFIT_folders \
-    -s ${DIR}/subjectIDs_list.txt \
-    -i ${DIR}/subject_demographics.txt \
+    -s ${DIR}/my_ENIGMA_DTI_analysis/subjectIDs_list.txt \
+    -i ${DIR}/my_ENIGMA_DTI_analysis/subject_demographics.txt \
     -r /usr/local/R/bin/R \
     -q 1
 ```
@@ -197,8 +197,8 @@ ${DIR}/ENIGMA_DTI_TBSS_pipeline.sh \
     -e ${DIR}/ENIGMA_DTI_TBSS \
     -o ${DIR}/my_ENIGMA_DTI_analysis/run_tbss \
     -d ${DIR}/my_ENIGMA_DTI_analysis/DTIFIT_folders \
-    -s ${DIR}/subjectIDs_list.txt \
-    -i ${DIR}/subject_demographics.txt \
+    -s ${DIR}/my_ENIGMA_DTI_analysis/subjectIDs_list.txt \
+    -i ${DIR}/my_ENIGMA_DTI_analysis/subject_demographics.txt \
     -r /usr/local/R/bin/R \
     -q 2
 ```
