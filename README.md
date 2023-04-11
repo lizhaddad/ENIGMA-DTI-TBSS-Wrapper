@@ -42,7 +42,7 @@ The script registers and skeletonizes your FA images to the DTI atlas being used
 
 It will pause after performing tbss steps 1-3 and allow you to quality control (QC) your data. If you are not running on a sun grid engine (SGE), within the command-line, you will be prompted that the script is paused for QC. At this point, it is advised that you QC and move any subjects that haven't passed QC to another folder. Pressing any key will then allow the script to continue with the subsequent steps. 
 
-If you are using a SGE task system, you will be able to run this script twice. With the `-q 1` flag, this script will complete tbss steps 1 & 2. Once successfully run, the user will be able to QC their data and move any subjects that haven't passed to another folder. By then running the same initial command, but this time with `-q 2`, the script will continue and finish the subsequent steps. 
+If you are using a SGE task system, you will be able to run this script twice. With the `-q 1` flag, this script will complete tbss steps 1-3. Once successfully run, the user will be able to QC their data and move any subjects that haven't passed to another folder. By then running the same initial command, but this time with `-q 2`, the script will continue and finish the subsequent steps. 
 
 **TODO**: Coming soon, a QC script will be added to this wrapper that will accomodate both small batches of data and larger ones. For now, one can still view the slicedir folder from tbss step 1, and use [existing QC scripts](https://enigma.ini.usc.edu/wp-content/uploads/DTI_Protocols/ENIGMA_FA_Skel_QC_protocol_USC.pdf) to view post-registration images. 
 
