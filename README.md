@@ -40,7 +40,7 @@ We also assume that your FSL installation can be found under the following alias
 
 The script registers and skeletonizes your FA images to the DTI atlas being used for ENIGMA-DTI for tract-based spatial statistics (TBSS; Smith et al., 2006). It also conducts ROI analysis for FA and all other diffisivity measures (MD,AD,RD).
 
-It will pause after performing tbss steps 1 & 2 and allow you to quality control (QC) your data. If you are not running on a sun grid engine (SGE), within the command-line, you will be prompted that the script is paused for QC. At this point, it is advised that you QC and move any subjects that haven't passed QC to another folder. Pressing any key will then allow the script to continue with the subsequent steps. 
+It will pause after performing tbss steps 1-3 and allow you to quality control (QC) your data. If you are not running on a sun grid engine (SGE), within the command-line, you will be prompted that the script is paused for QC. At this point, it is advised that you QC and move any subjects that haven't passed QC to another folder. Pressing any key will then allow the script to continue with the subsequent steps. 
 
 If you are using a SGE task system, you will be able to run this script twice. With the `-q 1` flag, this script will complete tbss steps 1 & 2. Once successfully run, the user will be able to QC their data and move any subjects that haven't passed to another folder. By then running the same initial command, but this time with `-q 2`, the script will continue and finish the subsequent steps. 
 

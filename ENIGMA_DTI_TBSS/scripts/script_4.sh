@@ -17,8 +17,13 @@ SUBJ_ID=${SUBJECT[${SGE_TASK_ID}-1]}
 
 for DIFF in FA MD AD RD
 do
+
+  if [ -f ${parentDirectory}/${DIFF}_individ/${SUBJ_ID}/stats/${SUBJ_ID}_masked_${DIFF}skel.nii.gz ]; then
   ${ROIextraction}/singleSubjROI_exe ${ROIextraction}/ENIGMA_look_up_table.txt ${ROIextraction}/mean_FA_skeleton.nii.gz ${ROIextraction}/JHU-WhiteMatter-labels-1mm.nii.gz ${dirO1}/${SUBJ_ID}_${DIFF}_ROIout ${parentDirectory}/${DIFF}_individ/${SUBJ_ID}/stats/${SUBJ_ID}_masked_${DIFF}skel.nii.gz
-   
+  fi
+  
+  if [ -f ${dirO1}/${SUBJ_ID}_${DIFF}_ROIout.csv ]; then
   ${ROIextraction}/averageSubjectTracts_exe ${dirO1}/${SUBJ_ID}_${DIFF}_ROIout.csv ${dirO2}/${SUBJ_ID}_${DIFF}_ROIout_avg.csv
+  fi
 
 done

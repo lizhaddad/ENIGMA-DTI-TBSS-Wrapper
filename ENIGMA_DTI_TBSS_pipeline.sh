@@ -92,10 +92,7 @@ sleep 10s
 
 cd $parentDirectory
 
-## QC Images
-read -s -n 1 -p "Script Paused! QC any images and move to a separate folder if you want to exclude. Once complete press Any Key to Continue. `echo $'\n> '`"
 
-### end part 1, have user check images
 #tbss_4_prestats -0.049
 
 
@@ -157,6 +154,10 @@ for DIFF in FA MD AD RD; do
     done
 done
 
+## QC Images
+read -s -n 1 -p "Script Paused! QC any images and move to a separate folder if you want to exclude. Once complete press Any Key to Continue. `echo $'\n> '`"
+
+### end part 1, have user check images
 
 for DIFF in FA MD AD RD
 do
@@ -168,10 +169,14 @@ do
  
    for subject in ${subjects[@]}
    do
-   
-   ${ROIextraction}/singleSubjROI_exe ${ROIextraction}/ENIGMA_look_up_table.txt ${ROIextraction}/mean_FA_skeleton.nii.gz ${ROIextraction}/JHU-WhiteMatter-labels-1mm.nii.gz ${dirO1}/${subject}_${DIFF}_ROIout ${parentDirectory}/${DIFF}_individ/${subject}/stats/${subject}_masked_${DIFF}skel.nii.gz
-   
-   ${ROIextraction}/averageSubjectTracts_exe ${dirO1}/${subject}_${DIFF}_ROIout.csv ${dirO2}/${subject}_${DIFF}_ROIout_avg.csv
+
+    if [ -f ${parentDirectory}/${DIFF}_individ/${subject}/stats/${subject}_masked_${DIFF}skel.nii.gz ]; then
+    ${ROIextraction}/singleSubjROI_exe ${ROIextraction}/ENIGMA_look_up_table.txt ${ROIextraction}/mean_FA_skeleton.nii.gz ${ROIextraction}/JHU-WhiteMatter-labels-1mm.nii.gz ${dirO1}/${subject}_${DIFF}_ROIout ${parentDirectory}/${DIFF}_individ/${subject}/stats/${subject}_masked_${DIFF}skel.nii.gz
+    fi
+    
+    if [ -f ${dirO1}/${subject}_${DIFF}_ROIout.csv ]; then
+    ${ROIextraction}/averageSubjectTracts_exe ${dirO1}/${subject}_${DIFF}_ROIout.csv ${dirO2}/${subject}_${DIFF}_ROIout_avg.csv
+    fi
    
    # can create subject list here for part 3!
    echo ${subject},${dirO2}/${subject}_${DIFF}_ROIout_avg.csv >> ${parentDirectory}/${DIFF}_individ/subjectList_${DIFF}.csv
