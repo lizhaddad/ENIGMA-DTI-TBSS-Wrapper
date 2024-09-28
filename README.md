@@ -16,11 +16,10 @@ elizabeth.haddad@loni.usc.edu, neda.jahanshad@ini.usc.edu
 
 First, let's get setup. To run this pipeline, we assume you have preprocessed and QC'ed your data and have run DTIFIT on your data.
 
-The following pages may be helpful before running this pipeline:
+The following page may be helpful before running this pipeline:
     
-&nbsp;&nbsp;&nbsp;&nbsp; 1. ENIGMA_DTI_01_Preprocessing ([:octocat:](https://github.com/ENIGMA-git/ENIGMA_DTI_01_Preprocessing))\
-&nbsp;&nbsp;&nbsp;&nbsp; 2. ENIGMA_DTI_02_EPI_Correction ([:octocat:](https://github.com/ENIGMA-git/ENIGMA_DTI_02_EPI_Correction))\
-&nbsp;&nbsp;&nbsp;&nbsp; 3. ENIGMA_DTI_03_Quality_Control ([:octocat:](https://github.com/ENIGMA-git/ENIGMA_DTI_03_Quality_Control))
+ENIGMA_DTI_01_Preprocessing ([:octocat:](https://github.com/ENIGMA-git/ENIGMA-DTI-Preprocessing-Guidelines))
+
 
 We also assume that your FSL installation can be found under the following alias: `$FSLDIR`.
 
