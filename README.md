@@ -18,7 +18,7 @@ First, let's get setup. To run this pipeline, we assume you have preprocessed an
 
 The following page may be helpful before running this pipeline:
     
-ENIGMA_DTI_01_Preprocessing ([:octocat:](https://github.com/ENIGMA-git/ENIGMA-DTI-Preprocessing-Guidelines))
+ [ENIGMA-DTI Preprocessing Guidelines](https://github.com/ENIGMA-git/ENIGMA-DTI-Preprocessing-Guidelines)
 
 
 We also assume that your FSL installation can be found under the following alias: `$FSLDIR`.
